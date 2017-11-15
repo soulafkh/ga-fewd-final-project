@@ -539,7 +539,7 @@ li:nth-child(4):before {
 }*/
 
 .readmore a, .readless a {
-	font-weight: 300;
+	font-weight: normal;
 	color: #FFBC60;
 	float: right;
 }

@@ -133,25 +133,6 @@ header {
 	box-shadow: 0 0 5px grey;
 }
 
-/*(rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0.9))
-*/
-/*header .logo {
-  display: block;
-  margin: 0 auto; 
-  padding: 10px 0; 
-}*/
-
-/*header nav ul {
-	float: right;
-}*/
-
-/*header nav ul li {
-	padding-left: 75px;
-	font-size: 0.9rem;
-	font-weight: 600;
-	margin-left: auto: 
-}*/
-
 .logo {
 	margin: 0 45px;
 	display: block;
@@ -217,13 +198,15 @@ header nav ul li a:hover {
 	line-height: 1.5;
 }
 
+
+/********** CTA BUTTON **********/
+
 .buy-btn {
 	display: block;
-	background: linear-gradient(#00BCBC, #04A1A1);
-	background: -webkit-linear-gradient(#00BCBC, #04A1A1f4); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#00BCBC, #04A1A1); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#00BCBC, #04A1A1); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#00BCBC, #04A1A1); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(#00BCBC, #04A1A1f4);
+    background: -o-linear-gradient(#00BCBC, #04A1A1);
+    background: -moz-linear-gradient(#00BCBC, #04A1A1);
+    background: linear-gradient(#00BCBC, #04A1A1);
     border-radius: 30px;
     width: 165px;
     margin: 23px auto;
@@ -253,12 +236,11 @@ header nav ul li a:hover {
 	animation-timing-function: ease-in;
 }
 
+
+/********** COPYRIGHT **********/
+
 .copyright {
-	padding: 0 0 15px 0;
-	position: relative;
-	bottom: 5px;
-	position: relative;
-	bottom: 0;
+	padding-bottom: 15px;
 }
 
 .copyright img {
@@ -273,6 +255,7 @@ header nav ul li a:hover {
 	line-height: 2;
 	color: #8C8C8C;
 }
+
 
 /******************************************
 /* QUOTES
@@ -305,8 +288,7 @@ header nav ul li a:hover {
 .quotes p {
 	color: #FFBC60;
 	text-align: center;
-	font-style: 1.125rem;
-	font-weight: normal;
+	font-size: 1.125rem;
 }
 
 
@@ -330,16 +312,17 @@ img, video {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /******************************************
 /* CONTENTS
 /*******************************************/
 
-.contents, .about, .contact-form {
+.contents, .about, .contact-form, .cta {
 	padding: 40px 0;
 }
 
 .contents h3 {
-	padding: 20px 0 2px 0;
+	padding: 20px 0 3px 0;
 }
 
 .left h3:nth-of-type(1) {
@@ -386,12 +369,9 @@ img, video {
 	cursor: pointer;
 }
 
-/*.plus a {
-	color: white;
-}*/
-
 
 /* Styling for the chapter number */
+
 span.chapter {
 	color: white;
 	padding: 5px 13px;
@@ -424,17 +404,6 @@ span.chapter {
 	background-color: #A13943;
 }
 
-
-/*
-li:nth-child(3):before {
-	background-color: blue;
-}
-
-li:nth-child(4):before {
-	background-color: yellow;
-	content: "+";
-}
-*/
 .is-minimised:before {
 	content: "+";
 }
@@ -442,6 +411,8 @@ li:nth-child(4):before {
 .is-expanded:before {
 	content: "-";
 }
+
+/* Styling for expanded content */
 
 .description {
 	width: 95%;
@@ -454,9 +425,6 @@ li:nth-child(4):before {
 /******************************************
 /* CALL-TO-ACTION
 /*******************************************/
-.cta {
-	padding: 40px 0;
-}
 
 .cta h2 {
 	color: white;
@@ -502,22 +470,9 @@ li:nth-child(4):before {
 	padding-right: 20px;
 }
 
-/*.cta ul li {
-	display: inline-block;
-}
-
-.cta ul li:nth-child(2n) {
-	padding: 0 10%;
-}
-*/
-
 /******************************************
 /* ABOUT
 /*******************************************/
-
-/*.about {
-	background-color: #F2F2F2;
-}*/
 
 .about h3 {
 	color: #02B1B1;
@@ -530,12 +485,6 @@ li:nth-child(4):before {
 .about-box:nth-of-type(2) {
 	margin-top: 30px;
 }
-
-/*.about-box p {
-	width: 95%;
-	margin-top: 10px;
-	margin-right: 0;
-}*/
 
 .readmore a, .readless a {
 	font-weight: normal;
@@ -554,7 +503,6 @@ li:nth-child(4):before {
 /******************************************
 /* CONTACT
 /*******************************************/
-
 
 .two-equal-col .two-col-two-third {
 	display: block;
@@ -583,11 +531,11 @@ li:nth-child(4):before {
 	float: right;
 	margin-top: 15px;
 	border: none;
-	font-family: "avenir next";
 	width: 97px;
-	font-size: 1rem;
 	padding: 5px;
+	font-family: "avenir next";
 	font-weight: 400;
+	font-size: 1rem;
 }
 
 input, textarea {
@@ -599,8 +547,7 @@ input, textarea {
 }
 
 [type=text], [type=email] {
-/*	font-style: italic;
-*/	font-family: "avenir next";
+	font-family: "avenir next";
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -621,9 +568,11 @@ input, textarea {
 
 }
 
+
 footer {
 	margin: 30px 0;
 }
+
 
 
 /*************** VISUAL HELPER CLASSES ***************/
@@ -661,7 +610,7 @@ footer {
 	color: white;
 }
 
-.is-active.top, .is-active.menu {
+.is-active.top {
 	top: 0px;
 }
 
@@ -680,6 +629,8 @@ img.active:nth-child(2) {
 img.active:nth-child(3) {
 	transition-delay: 0.6s;
 }
+
+/*************** Back to Top Button ***************/
 
 .sf-back-to-top {
 	background-color: #02B1B1; 
@@ -777,13 +728,6 @@ a.sf-back-to-top {
 	.desktop-menu {
 		display: block;
 	}
-
-/*	header {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 1000;
-	}*/
 
 	header nav ul li {
 		display: inline-block;
@@ -940,7 +884,6 @@ a.sf-back-to-top {
 	
 	.container {
 		width: 1302px;
-/*		margin: 0 auto;
-*/	}
+	}
 }
 

@@ -1,0 +1,947 @@
+/*
+Project Name: "Arabic for Designers" Official Website
+Client: Boutros
+Author: Boutros
+Developer Soulaf Khalifeh, London
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* CUSTOM FONT
+/*******************************************/
+
+
+@font-face{
+	font-family: "Tanseek W21";
+	src: url("../fonts/b7317620-2d08-406f-bd19-2ac013ce9453.eot");
+	src: url("../fonts/6372439e-409e-486f-aa4f-39729a4b8350.woff2") format("woff2"), url("./fonts/a6a5758f-af06-490e-8d05-544482af52eb.woff") format("woff"),url("./fonts/8c49ba91-8edd-4167-acb1-989320a3b9c0.ttf") format("truetype"), url("./fonts/b8253703-76d4-4488-b899-d9a27444220f.svg#b8253703-76d4-4488-b899-d9a27444220f") format("svg");
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Avenir next', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #4A4A4A;
+  background: #fff;
+}
+
+html {
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Tanseek W21";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 6.6rem;
+	line-height: 4.25rem;
+	margin-bottom: 18px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #132883;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.375rem;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1.75rem;
+}
+
+h5 {
+	font-size: 1.375rem;
+}
+
+h6 {
+	font-size: 1.125rem;
+}
+
+p {
+	font-size: 1.125rem; 
+	margin-bottom: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.is-hidden {
+	display: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/******************************************
+/* MENU
+/*******************************************/
+
+header {
+    background: -webkit-linear-gradient(#f4f4f4, #fff); 
+    background: -o-linear-gradient(#f4f4f4, #fff); 
+    background: -moz-linear-gradient(#f4f4f4, #fff); 
+    background: linear-gradient(rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0.9)); 
+	box-shadow: 0 0 5px grey;
+}
+
+/*(rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0.9))
+*/
+/*header .logo {
+  display: block;
+  margin: 0 auto; 
+  padding: 10px 0; 
+}*/
+
+/*header nav ul {
+	float: right;
+}*/
+
+/*header nav ul li {
+	padding-left: 75px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	margin-left: auto: 
+}*/
+
+.logo {
+	margin: 0 45px;
+	display: block;
+	margin: 0 auto;
+	padding: 14px 10px 19px 10px;
+}
+
+header nav ul {
+	padding: 0;
+}
+
+header nav ul li {
+	padding: 0 35px;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+header nav ul li a {
+	color: #132883;
+}
+
+header nav ul li a:hover {
+	color: #FFBC60;
+}
+
+.desktop-menu {
+	display: none;
+	text-align: center;
+}
+
+/******************************************
+/* Main Section | HOME
+/*******************************************/
+
+
+.hero-section {
+  	margin-top: 2px;
+}
+
+.intro {
+	margin-top: 25px;
+}
+
+.hero-section h2 {
+	color: #D0021B;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.55rem;
+	letter-spacing: 0.2px;
+}
+
+.hero-section h3 {
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: #02B1B1;
+	text-align: center;
+	margin-top: 18px;
+}
+
+.hero-section p {
+	text-align: justify;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.buy-btn {
+	display: block;
+	background: linear-gradient(#00BCBC, #04A1A1);
+	background: -webkit-linear-gradient(#00BCBC, #04A1A1f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00BCBC, #04A1A1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00BCBC, #04A1A1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00BCBC, #04A1A1); /* Standard syntax (must be last) */
+    border-radius: 30px;
+    width: 165px;
+    margin: 23px auto;
+    padding: 8px;
+   	text-align: center;
+   	color: white;
+   	font-weight: 400;
+   	font-size: 20px;
+   	letter-spacing: 0.1rem;
+}
+
+@keyframes nudge {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(0,3px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+.buy-btn:hover {
+	animation-name: nudge;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in;
+}
+
+.copyright {
+	padding: 0 0 15px 0;
+	position: relative;
+	bottom: 5px;
+	position: relative;
+	bottom: 0;
+}
+
+.copyright img {
+	display: block;
+	margin: 0 auto;
+}
+
+.copyright p, footer p {
+	font-size: 0.7rem;
+	font-weight: 200;
+	text-align: center;
+	padding-top: 5px;
+	line-height: 2;
+	color: #8C8C8C;
+}
+
+/******************************************
+/* QUOTES
+/*******************************************/
+
+.quotes, .cta, .contact-form {
+	background-color: #132883;
+	color: white;
+}
+
+.quotes {
+	padding-top: 40px;
+}
+
+.quote-box {
+	padding-bottom: 40px;
+	width: 80%; 
+	margin: 0 auto;
+}
+
+.quotes h4 {
+	font-size: 1.5rem;
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 15px;
+}
+
+.quotes p {
+	color: #FFBC60;
+	text-align: center;
+	font-style: 1.125rem;
+	font-weight: normal;
+}
+
+
+/******************************************
+/* SNEAK PEEK
+/*******************************************/
+
+img, video {
+	max-width: 100%;
+}
+
+.sneakpeek {
+	position: relative;
+}
+
+.play-button {
+	position: absolute;
+	width: 100px;
+	height: auto;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/******************************************
+/* CONTENTS
+/*******************************************/
+
+.contents, .about, .contact-form {
+	padding: 40px 0;
+}
+
+.contents h3 {
+	padding: 20px 0 2px 0;
+}
+
+.left h3:nth-of-type(1) {
+	border-bottom: 2px solid #0095A8;
+}
+
+.left h3:nth-of-type(2) {
+	border-bottom: 2px solid #B53E8B;
+}
+
+.left h3:nth-of-type(3) {
+	border-bottom: 2px solid #44CBB4;
+}
+
+.right h3:nth-of-type(1) {
+	border-bottom: 2px solid #D64272;
+}
+
+.right h3:nth-of-type(2) {
+	border-bottom: 2px solid #0073A4;
+}
+
+.right h3:nth-of-type(3) {
+	border-bottom: 2px solid #A13943;
+}
+
+.chapters {
+	margin-top: 20px;
+}
+
+/* Styling for plus sign */
+.plus {
+	color: white;
+	width: 24px;
+	text-align: center;
+	border-radius: 10px 0px;
+	font-size: 115%;
+	margin-top: -2px;
+	margin-left: auto;
+	display: block;
+}
+
+.plus:hover {
+	cursor: pointer;
+}
+
+/*.plus a {
+	color: white;
+}*/
+
+
+/* Styling for the chapter number */
+span.chapter {
+	color: white;
+	padding: 5px 13px;
+	border-radius: 10px 0px;
+	margin-right: 10px;
+	font-size: 90%;
+}
+
+.one {
+	background-color: #0095A8;
+}
+
+.two {
+	background-color: #B53E8B;
+}
+
+.three {
+	background-color: #44CBB4;
+}
+
+.four {
+	background-color: #D64272;
+}
+
+.five {
+	background-color: #0073A4;
+}
+
+.six {
+	background-color: #A13943;
+}
+
+
+/*
+li:nth-child(3):before {
+	background-color: blue;
+}
+
+li:nth-child(4):before {
+	background-color: yellow;
+	content: "+";
+}
+*/
+.is-minimised:before {
+	content: "+";
+}
+
+.is-expanded:before {
+	content: "-";
+}
+
+.description {
+	width: 95%;
+}
+
+.description img {
+	margin-bottom: 40px;
+}
+
+/******************************************
+/* CALL-TO-ACTION
+/*******************************************/
+.cta {
+	padding: 40px 0;
+}
+
+.cta h2 {
+	color: white;
+	font-family: 'Tanseek W21';
+	font-weight: 400;
+	font-size: 5rem;
+	line-height: 3.5rem;
+	text-align: center;
+	margin: 30px 0 25px 0;
+}
+
+.cta h3 {
+	color: #BEBEBE;
+	font-size: 1.275rem;
+	margin-bottom: 40px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.cta h4 {
+	color: #FFBC60;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.cta ul {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.cta ul li {
+	list-style-type: none;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.cta ul li:nth-child(1) {
+	padding-left: 15px;
+}
+
+.cta ul li:nth-child(2) {
+	padding-right: 20px;
+}
+
+/*.cta ul li {
+	display: inline-block;
+}
+
+.cta ul li:nth-child(2n) {
+	padding: 0 10%;
+}
+*/
+
+/******************************************
+/* ABOUT
+/*******************************************/
+
+/*.about {
+	background-color: #F2F2F2;
+}*/
+
+.about h3 {
+	color: #02B1B1;
+	font-size: 1.75rem;
+	font-weight: 500;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+}
+
+.about-box:nth-of-type(2) {
+	margin-top: 30px;
+}
+
+/*.about-box p {
+	width: 95%;
+	margin-top: 10px;
+	margin-right: 0;
+}*/
+
+.readmore a, .readless a {
+	font-weight: 300;
+	color: #FFBC60;
+	float: right;
+}
+
+.about-box img {
+	margin: 6px 0 10px 0;
+	border-radius: 40px 0;
+	border-left: 8px solid #132883;
+	border-right: 8px solid #132883;
+}
+
+
+/******************************************
+/* CONTACT
+/*******************************************/
+
+
+.two-equal-col .two-col-two-third {
+	display: block;
+}
+
+.contact-form h6 {
+	font-weight: 500;
+	font-size: 2.2rem;
+}
+
+.contact-form p {
+	font-weight: 500;
+	font-size: 1.875rem;
+}
+
+.contact-form input {
+	margin-bottom: 14px;
+}
+
+.contact-form textarea {
+	height: 138px;
+	resize:none;
+}
+
+.contact-form button {
+	float: right;
+	margin-top: 15px;
+	border: none;
+	font-family: "avenir next";
+	font-weight: 300;
+	width: 97px;
+	font-size: 1rem;
+	padding: 5px;
+}
+
+input, textarea {
+	border: none;
+	border-radius: 3px;
+	padding: 8.5px;
+	display: block;
+	width: 100%;
+}
+
+[type=text], [type=email] {
+/*	font-style: italic;
+*/	font-family: "avenir next";
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bbb;
+  font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #bbb;
+  font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #bbb;
+  font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #bbb;
+  font-style: italic;
+
+}
+
+footer {
+	margin: 30px 0;
+}
+
+
+/*************** VISUAL HELPER CLASSES ***************/
+.hidden {
+	opacity: 0;
+	position: relative;
+	transition: all 1.2s;
+}
+
+.hidden.wide {
+	width: 0px;
+	color: rgba(255, 255, 255, 0);
+}
+
+.hidden.top {
+  top: 20px;
+}
+
+.hidden.menu {
+	top: -50px;
+}
+
+.hidden.left {
+	left: 100px;
+}
+
+.is-active {
+	opacity: 1;
+	position: relative;
+	transition: all 1.2s;
+}
+
+.is-active.wide {
+	width: 185px;
+	color: white;
+}
+
+.is-active.top, .is-active.menu {
+	top: 0px;
+}
+
+div.active:nth-child(1) {
+	transition-delay: 0.3s;
+}
+
+div.active:nth-child(2) {
+	transition-delay: 0.6s;
+}
+
+img.active:nth-child(2) {
+	transition-delay: 0.3s;
+}
+
+img.active:nth-child(3) {
+	transition-delay: 0.6s;
+}
+
+.sf-back-to-top {
+	background-color: #02B1B1; 
+    color: white; 
+    display: none;
+    z-index: 999;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    /* round button */
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+a.sf-back-to-top {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    line-height: 1.4em;
+    text-align: center;
+    padding: 3px 3px 0 5px;
+}
+
+/******************************************************/
+
+
+/******************************************
+/* RESPONSIVE - MEDIA QUERIES
+/*******************************************/
+
+@media screen and (min-width:415px) {
+	.two-col-one-third img, img.mobile-image {
+		display: none;
+	}
+	.hero-section h3 {
+		margin: 18px 0;
+	}
+	.cta ul {
+	padding: 0;
+	margin-bottom: 0;
+	}
+
+	.cta ul li:nth-child(1) {
+		float: left;
+		padding-left: 0;
+	}
+
+	.cta ul li:nth-child(2) {
+		float: right;
+		padding-right: 0;
+	}
+
+	.cta li {
+		list-style-type: none;
+		display: inline-block;
+	}	
+}
+
+@media screen and (min-width:515px) {
+	.two-col-two-third {
+		float: right;
+		width: 66.6666%;			
+	}
+
+	.two-col-one-third {
+		float: left;
+		width: 30.3333%;
+		margin-right: 3%;
+	}
+
+	.two-col-one-third img {
+		display: block;
+	}
+}
+
+@media screen and (min-width:759px) {
+	.quote-box {
+		width: 460px;
+	}
+
+	.logo {
+		display: inline;
+		padding: 0;
+	}
+
+	.mobile-menu {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+	}
+
+/*	header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}*/
+
+	header nav ul li {
+		display: inline-block;
+	}
+
+	.cta ul {
+		margin-top: -60px;
+		margin-bottom: 75px;
+	}
+
+}
+
+@media screen and (min-width:920px) {
+	.logo {
+		margin: 0 80px;
+	}
+	
+	.hero-section {
+		background: url("../images/arabic-for-designers-book-cover-3000.jpg") no-repeat top center;
+	  	background-size: cover;
+	  	width: 920px;
+	  	margin: 3px auto;
+	}
+
+	.intro {
+		width: 400px;
+		margin-left: auto;
+		padding: 5em 0 2em 0;
+	}
+
+	.intro h2 {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.two-equal-col {
+	float: left;
+	width: 48%;
+	}
+
+	.two-equal-col:nth-of-type(1) {
+		margin-right: 4%;	
+	}
+
+	.quotes {
+		padding-top: 80px;
+	}
+
+	.quote-box {
+		width: 460px;
+	}
+
+	.quote-box {
+		padding-bottom: 80px;
+	}
+
+	.quote-box h4 {
+		font-size: 1.8rem;
+	}
+
+	.quote-box p {
+		font-size: 1.35rem;
+	}
+
+	.about-box p {
+		font-size: 1.155rem;
+	}
+}
+
+@media screen and (min-width:1103px) {
+	html {
+		font-size: 16px;
+	}
+
+	.hero-section {
+		width: 1103px;
+		margin: 3px auto;
+	}
+
+	.intro {
+		width: 450px;
+	}
+
+	.copyright {
+		padding-top: 3em;
+	}
+
+	.quote-box {
+		width: 620px;
+	}
+
+	.container {
+		max-width: 75%;
+	}
+
+	.contact-form textarea {
+		height: 145px;
+	}
+}
+
+@media screen and (min-width:1302px) {
+	html {
+		font-size: 17px;
+	}
+
+	.hero-section {
+		width: 1302px;
+		margin: 3px auto;
+	}
+
+	.intro {
+		width: 520px;
+		padding-top: 7em;
+	}
+
+	.copyright {
+		padding-top: 6em;
+	}
+
+	.about-box h3 {
+		font-size: 2rem;
+	}
+
+	.about-box p {
+		font-size: 1.25rem;
+	}
+
+	.quote-box {
+		width: 960px;
+	}
+
+}
+
+@media screen and (min-width:1486px) {
+	video {
+		min-width: 100%;
+		margin: 0 auto;
+	}
+
+@media screen and (min-width:1540px) {
+	html {
+		font-size: 18px;
+	}
+
+	.hero-section {
+		width: 1502px;
+		margin: 3px auto;
+		margin-top: 2px;
+	}
+
+	.contact-form textarea {
+		height: 155px;
+	}
+	
+	.container {
+		width: 1302px;
+/*		margin: 0 auto;
+*/	}
+}
+

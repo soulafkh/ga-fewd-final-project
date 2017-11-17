@@ -693,9 +693,16 @@ a.sf-back-to-top {
 	.two-col-one-third img, img.mobile-image {
 		display: none;
 	}
+
 	.hero-section h3 {
 		margin: 18px 0;
 	}
+
+	.quotes h4, .quotes p {
+		width: 350px;
+		margin: 0 auto;
+	}
+
 	.cta ul {
 	padding: 0;
 	margin-bottom: 0;
@@ -732,17 +739,9 @@ a.sf-back-to-top {
 	.two-col-one-third img {
 		display: block;
 	}
-
-	.quotes h4 {
-		padding: 0 70px 15px 70px;
-	}
 }
 
 @media screen and (min-width:759px) {
-	.quote-box {
-		width: 460px;
-	}
-
 	.logo {
 		display: inline;
 		padding: 0;
@@ -760,8 +759,8 @@ a.sf-back-to-top {
 		display: inline-block;
 	}
 
-	.quotes h4 {
-		padding: 0 140px 15px 140px;
+	.quotes h4, .quotes p {
+		width: 500px;
 	}
 
 	.cta ul {
@@ -803,8 +802,8 @@ a.sf-back-to-top {
 		margin-right: 4%;	
 	}
 
-	.quote-box {
-		width: 460px;
+	.quotes h4, .quotes p {
+		width: 600px;
 	}
 
 	.quotes h4 {
@@ -842,12 +841,8 @@ a.sf-back-to-top {
 	padding: 80px 0 60px 0;
 	}
 
-	.quotes h4 {
-		padding: 0 200px 15px 200px;
-	}
-
-	.quote-box {
-		width: 620px;
+	.quotes h4, .quotes p {
+		width: 700px;
 	}
 
 	.container {
@@ -886,8 +881,8 @@ a.sf-back-to-top {
 		font-size: 1.25rem;
 	}
 
-	.quote-box {
-		width: 960px;
+	.quotes h4, .quotes p {
+		width: 900px;
 	}
 
 }

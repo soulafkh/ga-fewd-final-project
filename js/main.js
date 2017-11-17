@@ -26,7 +26,6 @@ $(function() {
     $(this).toggleClass('is-minimised is-expanded');
   });
 
-
   $('.sneakpeek').on('click', function () {
     if($(this).children('.video').get(0).paused){
       $(this).children('.video').get(0).play();
@@ -42,12 +41,6 @@ $(function() {
     }, {
       offset: '75%'
   });
-
- /*  $('.video').waypoint(function() {
-    $(this).play();
-    }, {
-      offset: '75%'
-  });*/
 
   $('#home').on('click', function() {
     $('html, body').animate({scrollTop: $('#home-section').offset().top}, 200);
@@ -88,6 +81,14 @@ $(function() {
   autoplay: true,
   autoplaySpeed: 5000,
   });
+
+
+/*  $('.video').waypoint(function() {
+    $(this).play();
+  }, {
+    offset: '75%',
+  });
+*/
 });
 
 

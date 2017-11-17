@@ -1,4 +1,4 @@
-$(function() {
+$(function() {  
   $('.readmore').on('click', function(event){
     event.preventDefault();
     $(this).next('#is-hidden').slideDown(250);

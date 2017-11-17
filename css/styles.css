@@ -96,7 +96,7 @@ h6 {
 
 p {
 	font-size: 1.125rem; 
-	margin-bottom: 0.3rem;
+	margin-bottom: 0.6rem;
 }
 
 a {
@@ -743,6 +743,7 @@ a.sf-back-to-top {
 	.logo {
 		display: inline;
 		padding: 0;
+		margin: 0 20px;
 	}
 
 	.mobile-menu {
@@ -765,28 +766,62 @@ a.sf-back-to-top {
 		margin-top: -60px;
 		margin-bottom: 75px;
 	}
-
 }
 
-@media screen and (min-width:920px) {
-	.logo {
-		margin: 0 80px;
-	}
-	
+@media screen and (min-width:759px) and (max-width: 899px) {
+
 	.hero-section {
 		background: url("../images/arabic-for-designers-book-cover-3000.jpg") no-repeat top center;
 	  	background-size: cover;
-	  	width: 920px;
+	  	width: 759px;
+	  	margin: 3px auto;
+	}
+
+	.intro {
+		width: 320px;
+		margin-left: auto;
+		padding: 2em 0;
+	}
+
+	.hero-section h1 {
+		font-size: 4rem;
+		line-height: 0.8em;
+		margin: 0 auto;
+	}
+
+	.hero-section h2 {
+		font-size: 1.2rem;
+		margin: 0 auto;
+	}
+
+	.hero-section h3 {
+		margin: 6px 0;
+	}
+
+	.hero-section p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width:900px) {
+	.logo {
+		margin: 0 60px;
+	}
+
+	.hero-section {
+		background: url("../images/arabic-for-designers-book-cover-3000.jpg") no-repeat top center;
+	  	background-size: cover;
+	  	width: 900px;
 	  	margin: 3px auto;
 	}
 
 	.intro {
 		width: 400px;
 		margin-left: auto;
-		padding: 5em 0 2em 0;
+		padding: 3.5em 0 2em 0;
 	}
 
-	.intro h2 {
+	.hero-section h2 {
 		width: 70%;
 		margin: 0 auto;
 	}

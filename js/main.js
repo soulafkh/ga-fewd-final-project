@@ -83,12 +83,12 @@ $(function() {
   });
 
 
-/*  $('.video').waypoint(function() {
-    $(this).play();
+  /*$('.video').waypoint(function() {
+    $('.video').play();
   }, {
-    offset: '75%',
-  });
-*/
+  offset: '75%'
+  });*/
+
 });
 
 

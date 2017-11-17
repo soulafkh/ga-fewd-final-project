@@ -43,15 +43,11 @@ $(function() {
       offset: '75%'
   });
 
-/*  $('.hidden').waypoint(function() {
-    $(this.element).removeClass('hidden').addClass('is-active');
+ /*  $('.video').waypoint(function() {
+    $(this).play();
     }, {
       offset: '75%'
   });*/
-/*
-  $('.quote-box.fade-in').hide();
-  $('.quote-box').delay(5000).fadeOut(800);
-  $('.quote-box.fade-in').delay(800).fadeIn(2000);*/
 
   $('#home').on('click', function() {
     $('html, body').animate({scrollTop: $('#home-section').offset().top}, 200);
@@ -85,6 +81,13 @@ $(function() {
       return false;
   });
 
+  $('.autoplay').slick({
+  infintie: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  });
 });
 
 

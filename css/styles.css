@@ -267,12 +267,12 @@ header nav ul li a:hover {
 }
 
 .quotes {
-	padding-top: 40px;
+	padding: 60px 0 30px 0;
 }
 
-.quote-box {
+.hero-carousel .quote-box {
 	padding-bottom: 40px;
-	width: 80%; 
+	width: 60%; 
 	margin: 0 auto;
 }
 
@@ -283,14 +283,22 @@ header nav ul li a:hover {
 	text-align: center;
 	font-style: italic;
 	padding-bottom: 15px;
+	padding: 0 20px 15px 20px;
 }
 
 .quotes p {
 	color: #FFBC60;
 	text-align: center;
 	font-size: 1.125rem;
+	padding-bottom: 20px;
 }
 
+.slick-prev:before {
+	content: "";
+}
+.slick-next:before {
+	content: "";
+}
 
 /******************************************
 /* SNEAK PEEK
@@ -709,6 +717,10 @@ a.sf-back-to-top {
 	.two-col-one-third img {
 		display: block;
 	}
+
+	.quotes h4 {
+		padding: 0 70px 15px 70px;
+	}
 }
 
 @media screen and (min-width:759px) {
@@ -731,6 +743,10 @@ a.sf-back-to-top {
 
 	header nav ul li {
 		display: inline-block;
+	}
+
+	.quotes h4 {
+		padding: 0 140px 15px 140px;
 	}
 
 	.cta ul {
@@ -772,23 +788,15 @@ a.sf-back-to-top {
 		margin-right: 4%;	
 	}
 
-	.quotes {
-		padding-top: 80px;
-	}
-
 	.quote-box {
 		width: 460px;
 	}
 
-	.quote-box {
-		padding-bottom: 80px;
-	}
-
-	.quote-box h4 {
+	.quotes h4 {
 		font-size: 1.8rem;
 	}
 
-	.quote-box p {
+	.quotes p {
 		font-size: 1.35rem;
 	}
 
@@ -813,6 +821,14 @@ a.sf-back-to-top {
 
 	.copyright {
 		padding-top: 3em;
+	}
+
+	.quotes {
+	padding: 80px 0 60px 0;
+	}
+
+	.quotes h4 {
+		padding: 0 200px 15px 200px;
 	}
 
 	.quote-box {

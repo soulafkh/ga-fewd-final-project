@@ -818,7 +818,7 @@ a.sf-back-to-top {
 	.intro {
 		width: 400px;
 		margin-left: auto;
-		padding: 4.5em 0 2em 0;
+		padding: 4em 0 2em 0;
 	}
 
 	.hero-section h2 {
@@ -864,6 +864,7 @@ a.sf-back-to-top {
 
 	.intro {
 		width: 450px;
+		padding-top: 4.5em;
 	}
 
 	.copyright {

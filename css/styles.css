@@ -36,8 +36,8 @@ Developer Soulaf Khalifeh, London
 
 
 @font-face{
-	font-family: "Tanseek W21";
-	src: url("../fonts/b7317620-2d08-406f-bd19-2ac013ce9453.eot");
+	font-family: "tanseek-w21";
+	src: url("../fonts/tanseek-w21.eot");
 	src: url("../fonts/6372439e-409e-486f-aa4f-39729a4b8350.woff2") format("woff2"), url("./fonts/a6a5758f-af06-490e-8d05-544482af52eb.woff") format("woff"),url("./fonts/8c49ba91-8edd-4167-acb1-989320a3b9c0.ttf") format("truetype"), url("./fonts/b8253703-76d4-4488-b899-d9a27444220f.svg#b8253703-76d4-4488-b899-d9a27444220f") format("svg");
 }
 
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
 	text-align: center;
-	font-family: "Tanseek W21";
+	font-family: "Tanseek-W21";
 	font-weight: normal;
 	font-style: normal;
 	font-size: 6.6rem;
@@ -450,12 +450,12 @@ span.chapter {
 
 .cta h2 {
 	color: white;
-	font-family: 'Tanseek W21';
+	font-family: 'tanseek-w21';
 	font-weight: normal;
 	font-size: 5rem;
 	line-height: 3.5rem;
 	text-align: center;
-	margin: 30px 0 25px 0;
+	margin: 10px 0;
 }
 
 .cta h3 {

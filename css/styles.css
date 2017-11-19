@@ -38,7 +38,7 @@ Developer Soulaf Khalifeh, London
 @font-face{
 	font-family: "tanseek-w21";
 	src: url("../fonts/tanseek-w21.eot");
-	src: url("../fonts/6372439e-409e-486f-aa4f-39729a4b8350.woff2") format("woff2"), url("./fonts/a6a5758f-af06-490e-8d05-544482af52eb.woff") format("woff"),url("./fonts/8c49ba91-8edd-4167-acb1-989320a3b9c0.ttf") format("truetype"), url("./fonts/b8253703-76d4-4488-b899-d9a27444220f.svg#b8253703-76d4-4488-b899-d9a27444220f") format("svg");
+	src: url("../fonts/tanseek-w21.eot?#iefix") format("embedded-opentype"), url("../fonts/6372439e-409e-486f-aa4f-39729a4b8350.woff2") format("woff2"), url("./fonts/a6a5758f-af06-490e-8d05-544482af52eb.woff") format("woff"),url("./fonts/8c49ba91-8edd-4167-acb1-989320a3b9c0.ttf") format("truetype"), url("./fonts/b8253703-76d4-4488-b899-d9a27444220f.svg#b8253703-76d4-4488-b899-d9a27444220f") format("svg");
 }
 
 /******************************************
@@ -46,7 +46,7 @@ Developer Soulaf Khalifeh, London
 /*******************************************/
 
 body {
-  font-family: 'Avenir next', Helvetica, Arial, sans-serif;
+  font-family: "Avenir next", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #4A4A4A;
   background: #fff;

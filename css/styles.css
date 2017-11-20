@@ -762,6 +762,10 @@ a.sf-back-to-top {
 		width: 500px;
 	}
 
+	.play-button {
+		width: 150px;
+	}
+
 	.cta ul {
 		margin-top: -60px;
 		margin-bottom: 75px;

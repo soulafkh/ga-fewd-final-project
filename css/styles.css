@@ -130,6 +130,11 @@ header {
     background: -moz-linear-gradient(#f4f4f4, #fff); 
     background: linear-gradient(rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0.9)); 
 	box-shadow: 0 0 5px grey;
+	position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -160,6 +165,10 @@ header nav ul li a:hover {
 .desktop-menu {
 	display: none;
 	text-align: center;
+}
+
+.nav-up {
+    top: -60px;
 }
 
 /******************************************

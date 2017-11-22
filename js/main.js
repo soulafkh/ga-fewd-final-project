@@ -81,14 +81,7 @@ $(function() {
   autoplay: true,
   autoplaySpeed: 5000,
   });
-
-
-  /*$('.video').waypoint(function() {
-    $('.video').play();
-  }, {
-  offset: '75%'
-  });*/
-
+  
 });
 
 

@@ -1,8 +1,8 @@
 /*
-Project Name: "Arabic for Designers" Official Website
+Project Name: Arabic for Designers Official Website
 Client: Boutros
 Author: Boutros
-Developer Soulaf Khalifeh, London
+Developer: Soulaf Khalifeh
 */
 
 
@@ -34,7 +34,6 @@ Developer Soulaf Khalifeh, London
 /* CUSTOM FONT
 /*******************************************/
 
-
 @font-face{
 	font-family: "tanseek-w21";
 	src: url("../fonts/tanseek-w21.eot");
@@ -62,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
 	text-align: center;
-	font-family: "Tanseek-W21";
+	font-family: "tanseek-w21";
 	font-weight: normal;
 	font-style: normal;
 	font-size: 6.6rem;
@@ -169,7 +168,7 @@ header nav ul li a:hover {
 
 
 .hero-section {
-  	margin-top: 2px;
+  	margin: 5px auto;
 }
 
 .intro {
@@ -375,22 +374,6 @@ img, video {
 	margin-top: 20px;
 }
 
-/* Styling for plus sign */
-.plus {
-	color: white;
-	width: 24px;
-	text-align: center;
-	border-radius: 10px 0px;
-	font-size: 115%;
-	margin-top: -2px;
-	margin-left: auto;
-	display: block;
-}
-
-.plus:hover {
-	cursor: pointer;
-}
-
 
 /* Styling for the chapter number */
 
@@ -424,6 +407,22 @@ span.chapter {
 
 .six {
 	background-color: #A13943;
+}
+
+/* Styling for plus sign */
+.plus {
+	color: white;
+	width: 24px;
+	text-align: center;
+	border-radius: 10px 0px;
+	font-size: 115%;
+	margin-top: -2px;
+	margin-left: auto;
+	display: block;
+}
+
+.plus:hover {
+	cursor: pointer;
 }
 
 .is-minimised:before {
@@ -580,22 +579,22 @@ input, textarea {
   color: #bbb;
   font-style: italic;
 }
+:-moz-placeholder { /* Firefox 18- */
+  color: #bbb;
+  font-style: italic;
+}
 :-ms-input-placeholder { /* IE 10+ */
   color: #bbb;
   font-style: italic;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: #bbb;
-  font-style: italic;
 
-}
-
+/******************************************
+/* FOOTER
+/*******************************************/
 
 footer {
 	margin: 30px 0;
 }
-
-
 
 /*************** VISUAL HELPER CLASSES ***************/
 .hidden {
@@ -643,14 +642,6 @@ div.active:nth-child(2) {
 	transition-delay: 0.6s;
 }
 
-img.active:nth-child(2) {
-	transition-delay: 0.3s;
-}
-
-img.active:nth-child(3) {
-	transition-delay: 0.6s;
-}
-
 /*************** Back to Top Button ***************/
 
 .sf-back-to-top {
@@ -663,11 +654,7 @@ img.active:nth-child(3) {
     bottom: 20px;
     width: 40px;
     height: 40px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
-    /* round button */
-    -webkit-border-radius: 50%;
+    border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -679,9 +666,6 @@ a.sf-back-to-top {
     text-align: center;
     padding: 3px 3px 0 5px;
 }
-
-/******************************************************/
-
 
 /******************************************
 /* RESPONSIVE - MEDIA QUERIES
@@ -778,7 +762,6 @@ a.sf-back-to-top {
 		background: url("../images/arabic-for-designers-book-cover-3000.jpg") no-repeat top center;
 	  	background-size: cover;
 	  	width: 759px;
-	  	margin: 3px auto;
 	}
 
 	.intro {
@@ -816,7 +799,6 @@ a.sf-back-to-top {
 		background: url("../images/arabic-for-designers-book-cover-3000.jpg") no-repeat top center;
 	  	background-size: cover;
 	  	width: 900px;
-	  	margin: 3px auto;
 	}
 
 	.intro {
@@ -831,8 +813,8 @@ a.sf-back-to-top {
 	}
 
 	.two-equal-col {
-	float: left;
-	width: 48%;
+		float: left;
+		width: 48%;
 	}
 
 	.two-equal-col:nth-of-type(1) {
@@ -863,7 +845,6 @@ a.sf-back-to-top {
 
 	.hero-section {
 		width: 1103px;
-		margin: 3px auto;
 	}
 
 	.intro {
@@ -876,7 +857,7 @@ a.sf-back-to-top {
 	}
 
 	.quotes {
-	padding: 80px 0 60px 0;
+		padding: 80px 0 60px 0;
 	}
 
 	.quotes h4, .quotes p {
@@ -899,7 +880,6 @@ a.sf-back-to-top {
 
 	.hero-section {
 		width: 1302px;
-		margin: 3px auto;
 	}
 
 	.intro {
@@ -938,8 +918,6 @@ a.sf-back-to-top {
 
 	.hero-section {
 		width: 1502px;
-		margin: 3px auto;
-		margin-top: 2px;
 	}
 
 	.contact-form textarea {
@@ -951,3 +929,4 @@ a.sf-back-to-top {
 	}
 }
 
+/********************************************************/

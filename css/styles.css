@@ -177,7 +177,7 @@ header nav ul li a:hover {
 
 
 .hero-section {
-  	margin: 5px auto;
+  	margin: 60px auto 0;
 }
 
 .intro {
@@ -808,6 +808,7 @@ a.sf-back-to-top {
 		background: url("../images/arabic-for-designers-book-cover-3000.jpg") no-repeat top center;
 	  	background-size: cover;
 	  	width: 900px;
+	  	margin: 40px auto 0;
 	}
 
 	.intro {

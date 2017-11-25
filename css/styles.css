@@ -168,7 +168,7 @@ header nav ul li a:hover {
 }
 
 .nav-up {
-    top: -60px;
+    top: -70px;
 }
 
 /******************************************
@@ -313,6 +313,11 @@ header nav ul li a:hover {
 
 img, video {
 	max-width: 100%;
+}
+
+video {
+	display: block;
+	margin: 0 auto;
 }
 
 *::-webkit-media-controls-panel {
@@ -883,6 +888,12 @@ a.sf-back-to-top {
 	}
 }
 
+@media screen and (min-width:1295px) and (max-width: 1800px ) {
+	video {
+		min-width: 100%;
+	}
+}
+
 @media screen and (min-width:1302px) {
 	html {
 		font-size: 17px;
@@ -912,14 +923,7 @@ a.sf-back-to-top {
 	.quotes h4, .quotes p {
 		width: 900px;
 	}
-
 }
-
-@media screen and (min-width:1486px) {
-	video {
-		min-width: 100%;
-		margin: 0 auto;
-	}
 
 @media screen and (min-width:1540px) {
 	html {

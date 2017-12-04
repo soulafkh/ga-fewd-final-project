@@ -201,7 +201,6 @@ header nav ul li a:hover {
 }
 
 .hero-section p {
-	text-align: justify;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -553,6 +552,11 @@ span.chapter {
 	font-size: 1.875rem;
 }
 
+.thank-you-message p {
+	font-size: 1.5rem;
+	color: #FFBC60;
+}
+
 .contact-form input {
 	margin-bottom: 14px;
 }
@@ -601,6 +605,7 @@ input, textarea {
   color: #bbb;
   font-style: italic;
 }
+
 
 /******************************************
 /* FOOTER
@@ -767,6 +772,10 @@ a.sf-back-to-top {
 	.cta ul {
 		margin-top: -60px;
 		margin-bottom: 75px;
+	}
+
+	.intro p {
+		text-align: justify;
 	}
 }
 

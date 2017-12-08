@@ -103,7 +103,7 @@ a {
 }
 
 sup {
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 .center {
@@ -556,8 +556,8 @@ span.chapter {
 	font-size: 1.875rem;
 }
 
-.thank-you-message p {
-	font-size: 1.5rem;
+.thank-you p {
+	font-size: 1.2rem;
 	color: #FFBC60;
 }
 

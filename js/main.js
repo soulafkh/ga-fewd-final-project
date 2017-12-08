@@ -16,6 +16,11 @@ $(function() {
     }, 200);
   });
 
+  $('#send').on('click', function(event){
+    event.preventDefault();
+    $('#thank-you').show();
+  });
+
   $('.plus').on('click', function(event){
     event.preventDefault();
     if(false == $(this).next('.is-hidden').is(':visible')) {
@@ -39,7 +44,7 @@ $(function() {
   $('.hidden').waypoint(function() {
     $(this.element).removeClass('hidden').addClass('is-active');
     }, {
-      offset: '75%'
+      offset: '65%'
   });
 
   $('#home').on('click', function() {

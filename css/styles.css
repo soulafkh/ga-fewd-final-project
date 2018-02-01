@@ -103,7 +103,7 @@ a {
 }
 
 sup {
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .center {
@@ -898,6 +898,10 @@ a.sf-back-to-top {
 
 	.contact-form textarea {
 		height: 145px;
+	}
+
+	sup {
+		font-size: 1.2rem;
 	}
 }
 
